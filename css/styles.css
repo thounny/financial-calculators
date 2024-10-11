@@ -103,7 +103,8 @@ button {
 /* RESULT INPUT */
 #monthlyPayment,
 #totalInterest,
-#futureValue {
+#futureValue,
+#presentValue {
   color: black;
   background-color: #f0f0f0; /* Light background for contrast */
   border: 1px solid #000; /* Add a black border for better visibility */
