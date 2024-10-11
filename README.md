@@ -2,7 +2,7 @@
 
 This project is a collection of financial calculators, including a **Mortgage Calculator**, **Future Value Calculator**, and **Present Value of Annuity Calculator**, built with **HTML**, **CSS**, **Bootstrap**, **98.css** for a retro aesthetic, and **JavaScript** for functionality.
 
-These calculators provide users with essential financial information, such as _mortgage payments_, _future savings growth_, and _annuity present values_.
+These calculators provide users with essential financial information, such as **mortgage payments**, **future savings growth**, and **annuity present values**.
 
 ## Screenshots
 
@@ -151,17 +151,36 @@ Where:
 
 This allows users to estimate their mortgage payments and see how much interest they will pay over the life of the loan.
 
-## Error Handling
+Here’s a simpler version of the error handling section, explained for beginners:
 
-Each calculator has basic error handling to ensure users fill in all the necessary input fields before calculations are performed. If any input field is left blank, an alert message will prompt users to fill in the missing information.
+---
+
+### Error Handling
+
+I added **error handling** to make sure users enter the right information before calculating results. This helps prevent mistakes and ensures the calculations are accurate. Here’s how it works in the **Future Value Calculator**:
 
 ```javascript
-if (principal && interestRate && loanTerm) {
-  // Perform the calculation
-} else {
-  alert("Please fill in all fields.");
+// Error handling: check if all input fields have values and if they are valid numbers
+if (isNaN(deposit) || deposit <= 0) {
+  alert("Please enter a valid deposit amount greater than zero.");
+  return;
+}
+if (isNaN(interestRate) || interestRate < 0) {
+  alert("Please enter a valid interest rate (0 or higher).");
+  return;
+}
+if (isNaN(years) || years <= 0) {
+  alert("Please enter a valid number of years greater than zero.");
+  return;
 }
 ```
+
+**How It Works:**
+
+1. **Checking Inputs**: I used `isNaN()` to see if the user entered a valid number. If the input is not a number or doesn't meet the conditions, like a deposit greater than zero, I showed an error message.
+2. **Stopping Errors**: If there’s a problem with the input, the calculator won’t run until the user fixes the error. This keeps the results accurate.
+
+By checking the inputs first, I made sure the user gets a correct answer, and the calculator won’t run with bad data. This makes the calculator more reliable and easy to use!
 
 ---
 
