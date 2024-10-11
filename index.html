@@ -16,35 +16,53 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Full-width Navbar with window 98 -->
-    <div class="window nav-top full-width-nav">
-      <nav class="title-bar">
-        <!-- Logo PNG -->
-        <a href="./index.html"
-          ><img src="./images/logo1.png" alt="my logo"
-        /></a>
-        <div class="title-bar-controls">
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="./index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="./mortgage.html" class="nav-link">Mortgage Calculator</a>
-            </li>
-            <li class="nav-item">
-              <a href="./future-value.html" class="nav-link"
-                >Future Value Calculator</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="./ordinary-annuity.html" class="nav-link"
-                >Annuity Calculator</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg title-bar">
+      <!-- Logo PNG -->
+      <a class="navbar-brand" href="./index.html">
+        <img
+          src="./images/logo1.png"
+          alt="my logo"
+          class="d-inline-block align-top"
+        />
+      </a>
+
+      <!-- Hamburger menu (Bootstrap collapsible) -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon">&#9776;</span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <!-- Align to the right -->
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./mortgage.html">Mortgage Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./future-value.html"
+              >Future Value Calculator</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./ordinary-annuity.html"
+              >Annuity Calculator</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- Financial Calculators -->
     <div class="container window" style="margin-top: 50px">
@@ -65,5 +83,10 @@
         </ul>
       </div>
     </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </body>
 </html>
