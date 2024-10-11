@@ -74,8 +74,7 @@ img:hover {
     text-decoration: underline;
 }
 
-.title-bar-controls button {
-    background-color: var(--title-bar-bg);
+.title-bar-controls button { 
     border: none;
     cursor: pointer;
     width: 15px;
