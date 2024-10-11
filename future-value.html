@@ -93,8 +93,16 @@
         </form>
         <div>
           <h3>Results:</h3>
-          <p>Future Value: $<span id="futureValue"></span></p>
-          <p>Total Interest Earned: $<span id="totalInterest"></span></p>
+          <p>
+            Future Value: $<input type="number" id="futureValue" readonly />
+          </p>
+          <p>
+            Total Interest Earned: $<input
+              type="number"
+              id="totalInterest"
+              readonly
+            />
+          </p>
         </div>
       </div>
     </div>
@@ -103,5 +111,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- future-value.js -->
+    <script src="./js/future-value.js"></script>
   </body>
 </html>
