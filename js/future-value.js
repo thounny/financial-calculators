@@ -17,7 +17,7 @@ document.querySelector(".btn-primary").addEventListener("click", function () {
   }
 });
 
-// Reset input fields
+// Reset button
 document.querySelector(".btn-secondary").addEventListener("click", function () {
   document.getElementById("futureValue").value = "";
   document.getElementById("totalInterest").value = "";
@@ -26,7 +26,7 @@ document.querySelector(".btn-secondary").addEventListener("click", function () {
 // Function for future value
 function calculateFutureValue(deposit, interestRate, years) {
   const rate = interestRate / 100;
-  return deposit * (1 + rate) ** years; // future value formula
+  return deposit * (1 + rate) ** years; // Future value formula
 }
 
 // Function for total interest earned

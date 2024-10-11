@@ -27,7 +27,7 @@ document.querySelector(".btn-primary").addEventListener("click", function () {
   }
 });
 
-// Event listener for Reset button
+// Reset button
 document.querySelector(".btn-secondary").addEventListener("click", function () {
   // Reset
   document.getElementById("monthlyPayment").value = "";
