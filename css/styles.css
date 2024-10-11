@@ -49,15 +49,15 @@ img:hover {
 
 .navbar-toggler {
   box-shadow: none;
-  border: none; /* Remove border and shadow */
+  border: none; 
 }
 
 /* BOOTSTRAP NAV ICON */
 .navbar-toggler-icon {
   background-image: none;
-  content: "\2630"; /* Unicode for hamburger icon */
+  content: "\2630"; 
   font-size: 1.5rem;
-  color: var(--title-bar-color); /* Use the Windows 98 text color */
+  color: var(--title-bar-color); 
 }
 
 .nav-link {
@@ -99,6 +99,7 @@ button {
   margin-right: var(--button-margin-right);
 }
 
+/* Miku Approved */
 .miku-approved {
   text-align: center;
   margin-top: 20px;
@@ -108,6 +109,7 @@ button {
   display: inline-block;
   width: auto;
   height: auto;
+  filter: none;
 }
 
 /* RESULT INPUT */
