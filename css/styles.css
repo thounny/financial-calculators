@@ -30,6 +30,15 @@ body {
   background-color: var(--background-color);
 }
 
+img {
+    height: 50px;
+    filter: invert();
+}
+
+img:hover {
+    filter: blur(1px);
+}
+
 /* NAVBAR */
 .title-bar {
     background-color: var(--title-bar-bg);
