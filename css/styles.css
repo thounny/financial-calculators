@@ -41,19 +41,18 @@ img:hover {
 
 /* NAVBAR */
 .navbar {
-  background-color: var(--title-bar-bg); /* Windows 98 style background */
-  color: var(--title-bar-color); /* Windows 98 style text color */
+  background-color: var(--title-bar-bg); 
+  color: var(--title-bar-color); 
   padding: 5px 10px;
-  border-bottom: 2px solid black; /* Bottom border for Windows 98 look */
+  border-bottom: 2px solid black; 
 }
 
-/* Remove 98.css shadow on the navbar-toggler button */
 .navbar-toggler {
   box-shadow: none;
   border: none; /* Remove border and shadow */
 }
 
-/* Ensuring Bootstrap's default navbar toggler icon style is applied */
+/* BOOTSTRAP NAV ICON */
 .navbar-toggler-icon {
   background-image: none;
   content: "\2630"; /* Unicode for hamburger icon */
@@ -98,6 +97,17 @@ h1, h3 {
 /* BUTTONS */
 button {
   margin-right: var(--button-margin-right);
+}
+
+.miku-approved {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.miku-approved img {
+  display: inline-block;
+  width: auto;
+  height: auto;
 }
 
 /* RESULT INPUT */
