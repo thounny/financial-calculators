@@ -93,8 +93,16 @@
         </form>
         <div>
           <h3>Results:</h3>
-          <p>Monthly Payment: $<span id="monthlyPayment"></span></p>
-          <p>Total Interest: $<span id="totalInterest"></span></p>
+          <p>
+            Monthly Payment: $<input
+              type="number"
+              id="monthlyPayment"
+              readonly
+            />
+          </p>
+          <p>
+            Total Interest: $<input type="number" id="totalInterest" readonly />
+          </p>
         </div>
       </div>
     </div>
@@ -103,5 +111,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- mortgage.js -->
+    <script src="./js/mortgage.js"></script>
   </body>
 </html>
