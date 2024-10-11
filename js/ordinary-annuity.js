@@ -1,20 +1,31 @@
 // Event listener for Calculate button
 document.querySelector(".btn-primary").addEventListener("click", function () {
   // Get values from input fields
-  const payout = document.getElementById("payout").value;
-  const interestRate = document.getElementById("interestRate").value;
-  const years = document.getElementById("years").value;
+  const payout = parseFloat(document.getElementById("payout").value);
+  const interestRate = parseFloat(
+    document.getElementById("interestRate").value
+  );
+  const years = parseInt(document.getElementById("years").value);
 
-  // Check if all fields have values
-  if (payout && interestRate && years) {
-    // Calculate present value
-    const presentValue = calculatePresentValue(payout, interestRate, years);
-
-    // Display the result in the input field
-    document.getElementById("presentValue").value = presentValue.toFixed(2);
-  } else {
-    alert("Please fill in all fields.");
+  // Error handling: Check if the input fields have valid values
+  if (isNaN(payout) || payout <= 0) {
+    alert("Please enter a valid payout amount greater than zero.");
+    return;
   }
+  if (isNaN(interestRate) || interestRate < 0) {
+    alert("Please enter a valid interest rate (0 or higher).");
+    return;
+  }
+  if (isNaN(years) || years <= 0) {
+    alert("Please enter a valid number of years greater than zero.");
+    return;
+  }
+
+  // Calculate present value
+  const presentValue = calculatePresentValue(payout, interestRate, years);
+
+  // Display the result in the input field
+  document.getElementById("presentValue").value = presentValue.toFixed(2);
 });
 
 // Reset button
