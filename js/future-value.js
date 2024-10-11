@@ -1,4 +1,4 @@
-// User clicks Calculate = onclick
+// Event listener for Calculate button
 document.querySelector(".btn-primary").addEventListener("click", function () {
   // Get the values from the input fields
   const deposit = document.getElementById("deposit").value;
